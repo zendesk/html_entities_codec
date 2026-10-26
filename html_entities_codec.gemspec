@@ -10,10 +10,10 @@ Gem::Specification.new do |s|
   s.email = "pbattley@gmail.com"
   s.description = "A module for encoding and decoding (X)HTML entities."
   s.summary = "Encode/decode HTML entities"
-  s.files = Dir["lib/**/*.rb"]
-  s.license = "MIT"
+  s.files = Dir["lib/**/*.rb"] + %w[COPYING.txt LICENSE README.md]
+  s.licenses = ["Apache-2.0", "MIT"]
   s.require_path = "lib"
-  s.extra_rdoc_files = %w[History.txt COPYING.txt]
+  s.extra_rdoc_files = %w[History.txt COPYING.txt LICENSE README.md]
   s.homepage = "https://github.com/zendesk/html_entities_codec"
   s.metadata["homepage_uri"] = s.homepage
   s.metadata["changelog_uri"] = "#{s.homepage}/blob/main/History.txt"

@@ -90,5 +90,8 @@ coder = HTMLEntities.new(:expanded)
 
 ## Licence
 
-This code is free to use under the terms of the MIT licence. See the file
-COPYING.txt for more details.
+This fork is distributed under the Apache License, Version 2.0, except for  inherited code originally licensed under MIT. Modifications and new contributions made for this fork are licensed under Apache 2.0. See [LICENSE](LICENSE) for the full Apache license.
+
+Code inherited from Paul Battley's htmlentities project remains licensed under MIT. The original copyright notice and full MIT license are preserved in [COPYING.txt](COPYING.txt).
+
+These licenses apply to their respective portions of the code; they do not offer a choice of license for the entire gem.
