@@ -1,7 +1,7 @@
 class HTMLEntities
   InstructionError = Class.new(RuntimeError)
 
-  class Encoder #:nodoc:
+  class Encoder # :nodoc:
     INSTRUCTIONS = [:basic, :named, :decimal, :hexadecimal]
 
     def initialize(flavor, instructions)
@@ -120,7 +120,7 @@ class HTMLEntities
       @reverse_map ||= begin
         skips = HTMLEntities::SKIP_DUP_ENCODINGS[@flavor]
         map = HTMLEntities::MAPPINGS[@flavor]
-        uniqmap = skips ? map.reject { |ent, hx| skips.include? ent } : map
+        uniqmap = skips ? map.except(*skips) : map
         uniqmap.invert
       end
     end

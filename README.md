@@ -1,16 +1,19 @@
-# [Why I'm no longer updating this repository](https://po-ru.com/2026/10/18/why-im-no-longer-updating-this-repository)
-
-HTMLEntities
+# html_entities_codec
 ============
 
-The canonical source for this project can be found at GitHub:
-[threedaymonk/htmlentities](https://github.com/threedaymonk/htmlentities).
-
-HTML entity encoding and decoding for Ruby
+This is a Zendesk-maintained fork of the gem created by Paul Battley [who announced that he will no longer update his gems](https://po-ru.com/2026/10/18/why-im-no-longer-updating-this-repository).
 
 HTMLEntities is a simple library to facilitate encoding and decoding of named
 (`&yacute;` and so on) or numerical (`&#123;` or `&#x12a;`) entities in HTML
 and XHTML documents.
+
+## Installation
+
+You will need an explicit `require` in your `Gemfile` (we renamed the gem after forking, but internally it’s still `HTMLEntities` and `htmlentities`):
+
+```ruby
+gem "html_entities_codec", require: "htmlentities"
+```
 
 ## Usage
 
@@ -87,9 +90,8 @@ coder = HTMLEntities.new(:expanded)
 
 ## Licence
 
-This code is free to use under the terms of the MIT licence. See the file
-COPYING.txt for more details.
+This fork is distributed under the Apache License, Version 2.0, except for  inherited code originally licensed under MIT. Modifications and new contributions made for this fork are licensed under Apache 2.0. See [LICENSE](LICENSE) for the full Apache license.
 
-## Contact
+Code inherited from Paul Battley's htmlentities project remains licensed under MIT. The original copyright notice and full MIT license are preserved in [COPYING.txt](COPYING.txt).
 
-Send email to `pbattley@gmail.com`.
+These licenses apply to their respective portions of the code; they do not offer a choice of license for the entire gem.

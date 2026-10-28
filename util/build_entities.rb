@@ -37,7 +37,7 @@ end
 entities["lt"] = "<".codepoints.first
 entities["amp"] = "&".codepoints.first
 
-puts <<~"END"
+puts <<~END
   # encoding: UTF-8
   class HTMLEntities
     MAPPINGS['#{flavor}'] = {

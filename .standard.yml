@@ -1,5 +1,3 @@
 ignore:
-  - "util/build_entities.rb":
+  - "util/build_entities.rb": # A spec maintenance script which doesn’t run in CI
     - Security/Open
-  - "lib/**/*.rb": # TODO: Remove when retiring Ruby 2.7 support
-    - Style/HashExcept

@@ -1,5 +1,5 @@
 class HTMLEntities
-  module VERSION #:nodoc:
+  module VERSION # :nodoc:
     MAJOR = 4
     MINOR = 4
     TINY = 2

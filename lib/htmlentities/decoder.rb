@@ -1,5 +1,5 @@
 class HTMLEntities
-  class Decoder #:nodoc:
+  class Decoder # :nodoc:
     def initialize(flavor)
       @flavor = flavor
       @map = HTMLEntities::MAPPINGS[@flavor]
@@ -22,7 +22,7 @@ class HTMLEntities
 
     private
 
-    def prepare(string) #:nodoc:
+    def prepare(string) # :nodoc:
       string.to_s.encode(Encoding::UTF_8)
     end
 
